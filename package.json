@@ -27,7 +27,7 @@
     "url": "https://github.com/jv-k/watch-execute/issues"
   },
   "homepage": "https://github.com/jv-k/watch-execute",
-  "devDependencies": {
+  "dependencies": {
     "cross-env": "^7.0.3"
   }
 }

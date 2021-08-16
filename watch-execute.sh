@@ -9,8 +9,16 @@ function eval_command() {
 }
 
 function show_help() {
+    local SCRIPT_VER SCRIPT_AUTH_EMAIL SCRIPT_AUTH_NAME SCRIPT_HOME
+    # NPM environment variables are fetched with cross-platform tool cross-env 
+    SCRIPT_VER=`cd $MODULE_DIR && npm run get-pkg-ver -s`
+    SCRIPT_AUTH_NAME=`cd $MODULE_DIR && npm run get-pkg-auth -s` 
+    SCRIPT_AUTH_EMAIL=`cd $MODULE_DIR && npm run get-pkg-email -s`
+    SCRIPT_NAME=`cd $MODULE_DIR && npm run get-pkg-name -s`
+    SCRIPT_HOME=`cd $MODULE_DIR && npm run get-pkg-page -s`
+
     echo -e "\n${S_NORM}${BOLD}Usage:${RESET}"\
-            "\nwatch-execute <file to watch> <bash command to execute on change>\n"; 
+            "\n${SCRIPT_NAME} <file to watch> <bash command to execute on change>\n"; 
 
     echo -e "${S_NORM}${BOLD}Credits:${S_LIGHT}"\
             "\n${SCRIPT_AUTH_NAME} <${SCRIPT_AUTH_EMAIL}> ${RESET}"\

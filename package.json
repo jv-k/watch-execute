@@ -1,0 +1,24 @@
+{
+  "name": "watch-execute",
+  "version": "1.0.0",
+  "description": "This is a simple bash module that watches a file for changes, and runs a command when it the file changes.",
+  "bin": "./watch.sh",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jv-k/watch-execute.git"
+  },
+  "keywords": [
+    "watch",
+    "execute",
+    "bash"
+  ],
+  "author": "John Valai <git@jvk.to>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jv-k/watch-execute/issues"
+  },
+  "homepage": "https://github.com/jv-k/watch-execute#readme"
+}

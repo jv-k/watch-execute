@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source lib/bash-helper.sh  
+MODULE_DIR="$(dirname "$(realpath "$0")")"
+
+source $MODULE_DIR/lib/helper.sh
 
 function eval_command() {
   "$@";

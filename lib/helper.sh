@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ANSI/VT100 colours
 YELLOW='\033[1;33m'
 LIGHTYELLOW='\033[0;33m'
@@ -32,9 +34,3 @@ I_TIME="⏳";
 I_STOP="🚫"; 
 I_ERROR="❌"; 
 I_END="👋🏻"
-
-# NPM environment variables are fetched with cross-platform tool cross-env 
-SCRIPT_VER=`npm run get-script-ver -s`
-SCRIPT_AUTH_NAME=`npm run get-script-auth -s` 
-SCRIPT_AUTH_EMAIL=`npm run get-script-email -s`
-SCRIPT_HOME=`npm run get-script-page -s`

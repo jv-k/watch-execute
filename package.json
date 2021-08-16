@@ -1,10 +1,14 @@
 {
   "name": "watch-execute",
   "version": "1.0.0",
-  "description": "This is a simple bash module that watches a file for changes, and runs a command when it the file changes.",
-  "bin": "./watch.sh",
+  "description": "This is a simple bash module that watches a file for changes, and runs a command when the file changes.",
+  "bin": "./watch-execute.sh",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-script-ver": "cross-env echo $npm_package_version",
+    "get-script-auth": "cross-env echo $npm_package_author_name",
+    "get-script-email": "cross-env echo $npm_package_author_email",
+    "get-script-page": "cross-env echo $npm_package_homepage"
   },
   "repository": {
     "type": "git",
@@ -13,12 +17,16 @@
   "keywords": [
     "watch",
     "execute",
-    "bash"
+    "bash",
+    "watch-execute"
   ],
   "author": "John Valai <git@jvk.to>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jv-k/watch-execute/issues"
   },
-  "homepage": "https://github.com/jv-k/watch-execute#readme"
+  "homepage": "https://github.com/jv-k/watch-execute",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
 }

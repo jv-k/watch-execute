@@ -35,11 +35,11 @@ process_args() {
         case $OPTIONS in
             h ) # display Help
                 show_help
-                exit;;
+                exit 0;;
             \? ) # Invalid option
                 echo -e "\n${I_ERROR}${S_ERROR} Invalid option: ${S_WARN}-$OPTARG" >&2
                 show_help
-                exit;;
+                exit 1;;
         esac
     done
 
@@ -49,7 +49,7 @@ process_args() {
     # Ensure file and command arguments are proper.
     if [ -z "$WATCH_FILE" ] && [ -z "$EXEC_CMD" ]; then
         show_help
-        exit 1
+        exit 0
     fi
 
     if [ -z "$WATCH_FILE" ] || [ -z "$EXEC_CMD" ]; then

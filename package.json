@@ -1,6 +1,6 @@
 {
   "name": "watch-execute",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This is a simple bash module that watches a file for changes, and runs a command when the file changes.",
   "bin": "./watch-execute.sh",
   "scripts": {
